@@ -7,8 +7,9 @@ HERE COMES TEXT!!! :)
 This Model for OpenSCAD is not finished and has not been printed by me.
 
 
-![PICTURE](.png)
+![PICTURE](rpi4case_holder_MPSMv2.png)
 <br>
+![PICTURE](rpi4case_holder_MPSMv2_caseCutOut.png)
 <br>
 <br>
 <br>
