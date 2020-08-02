@@ -64,12 +64,14 @@ module pins()
 /* ========================================================================= */
 
 /* display rpi4 case for simulation */
-/* translate([89,15,-84.2]) rotate([0,180,0]) color("green") import("Rpi_4_Case_Bottom.stl"); */
-  rpi4case_holder();
+translate([89,15,-84.2]) rotate([0,180,0]) color("green") import("Rpi_4_Case_Bottom.stl");
+
+/* show profile holder */
+rpi4case_holder();
 
 /* simulated pins to show how it looks */
-  /* translate([0.6,0,0]) rotate([0,0,0]) pins();
-  translate([75.6,0,0]) rotate([0,0,0]) pins(); */
+translate([0.6,0,0]) rotate([0,0,0]) pins();
+translate([75.6,0,0]) rotate([0,0,0]) pins();
 
 /* only call this for printable pins */
 /* translate([-50,0,0]) rotate([0,0,0]) pins();
