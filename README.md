@@ -6,10 +6,17 @@ Printed succesfully!! :)
 
 ![PICTURE](rpi4case_holder_MPSMv2.png)
 <br>
+![PICTURE](rpi4case_holder_MPSMv2_01.png)
+<br>
 ![Printed](001.jpg)
 <br>
 ![Printed](002.jpg)
 <br>
+![Printed](003.jpg)
+<br>
+![Printed](004.jpg)
+<br>
+![Printed](005.jpg)
 <br>
 
 # LICENSE
