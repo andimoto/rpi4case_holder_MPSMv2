@@ -1,6 +1,7 @@
 # RPi4 Case Holder for Monoprice Select Mini
 
-HERE COMES TEXT!!! :)
+Mounting profile for Raspberry Pi 4 Case on Monoprice Mini Select (v2)
+Printed succesfully!! :)
 
 
 ![PICTURE](rpi4case_holder_MPSMv2.png)
