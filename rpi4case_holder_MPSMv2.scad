@@ -21,13 +21,13 @@ module rpi4case_holder(length=100, depth=15,hight=20)
     translate([-extra/2,-extra,-extra]) cube([length+extra,cutOutDepth+extra,cutOutHight+extra]);
 
     /* top holes */
-    #translate([(length-holeDistancePiCase)/2,cutOutDepth*0.4,hight-extra/2]) hull() {
+    translate([(length-holeDistancePiCase)/2,cutOutDepth*0.4,hight-extra/2]) hull() {
         translate([holeDistancePiCase,0,0]) cylinder(r=mpsmScrewRadius, h=wallThickness*2, center=true);
         cylinder(r=mpsmScrewRadius, h=wallThickness*2, center=true);
     }
 
     /* rpi mounting holes */
-    #translate([((length-holeDistancePiCase-radiusPiMountHoles*2)),depth-wallThickness/2,cutOutHight/2-1])
+    translate([((length-holeDistancePiCase-radiusPiMountHoles*2)),depth-wallThickness/2,cutOutHight/2-1])
     rotate([90,0,0])
     union()
     {
@@ -41,15 +41,25 @@ module rpi4case_holder(length=100, depth=15,hight=20)
     translate([length,0,20]) rotate([0,0,45]) cube([10,10,10], center=true);
 
     /* extra coutout for z axis */
-    #translate([-extra,0,0]) cube([(length-holeDistancePiCase-radiusPiMountHoles*4)+extra,depth+extra,cutOutHight]);
+    translate([-extra,0,0]) cube([(length-holeDistancePiCase-radiusPiMountHoles*4)+extra,depth+extra,cutOutHight]);
 
-    #translate([(length-holeDistancePiCase-radiusPiMountHoles*4),depth,0])
+    translate([(length-holeDistancePiCase-radiusPiMountHoles*4),depth,0])
       rotate([0,45,0]) cube([10,10,10], center=true);
-    #translate([(length),depth,0])
+    translate([(length),depth,0])
       rotate([0,45,0]) cube([10,10,10], center=true);
   }
 
 }
+
+/* extra pins for mounting rpi case on this profile, just to try it out */
+module pins()
+{
+translate([20,19,8]) rotate([-90,0,0]) cylinder(r=radiusPiMountHoles+1, h=3);
+translate([20,12,8]) rotate([-90,0,0]) cylinder(r=radiusPiMountHoles, h=10);
+}
+
+translate([-40,-10,20]) rotate([-90,0,0]) pins();
+translate([-50,-10,20]) rotate([-90,0,0]) pins();
 
 /* hull() {
     translate([100,0,0]) cylinder(r=1.5, h=4, center=true);
@@ -57,5 +67,5 @@ module rpi4case_holder(length=100, depth=15,hight=20)
 } */
 
 
-/* translate([76,15,-83]) rotate([0,180,0]) color("green") import("Rpi_4_Case_Bottom.stl"); */
+#translate([88.5,15,-84]) rotate([0,180,0]) color("green") import("Rpi_4_Case_Bottom.stl");
   rpi4case_holder();
