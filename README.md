@@ -3,6 +3,7 @@
 Mounting profile for Raspberry Pi 4 Case on Monoprice Mini Select (v2)
 Printed succesfully!! :)
 
+The case for the Raspberry Pi 4 can be found here https://www.thingiverse.com/thing:3714695
 
 ![PICTURE](rpi4case_holder_MPSMv2.png)
 <br>
