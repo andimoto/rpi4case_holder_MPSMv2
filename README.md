@@ -3,15 +3,11 @@
 HERE COMES TEXT!!! :)
 
 
-**WORK IN PROGRESS!**
-This Model for OpenSCAD is not finished and has not been printed by me.
-
-
 ![PICTURE](rpi4case_holder_MPSMv2.png)
 <br>
-![PICTURE](rpi4case_holder_MPSMv2_caseCutOut.png)
+![Printed](001.jpg)
 <br>
-<br>
+![Printed](002.jpg)
 <br>
 <br>
 
